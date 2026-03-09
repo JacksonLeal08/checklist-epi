@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form';
 import { supabase } from '@/lib/supabaseClient';
 import Image from 'next/image';
 import type { Epi } from '@/types';
+import { toast } from 'sonner';
 
 // Componente de upload simples
 function ImageUpload({ onFilesSelected }: { onFilesSelected: (files: File[]) => void }) {
